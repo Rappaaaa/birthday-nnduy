@@ -1,0 +1,285 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>HABEDE</title>
+        <link rel="icon" type="image/png" href="image/__MENSAGENS_E_GIFS_DA_TEKA____GIFS_DE_ANIVERSÁRIO-removebg-preview.png">
+        <style>
+
+
+        body{
+            background-image: url(image/Background.jpg);
+            background-size: cover; /* Membuat gambar menutupi seluruh halaman */
+            background-position: center; /* Posisi gambar di tengah */
+            background-repeat: no-repeat; /* Agar gambar tidak berulang */
+            background-attachment: fixed; /* Membuat gambar tetap saat di-scroll */
+        }
+
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            color: aliceblue;
+            margin-top: 5%;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .highlight {
+            color: rgb(237, 54, 54);
+        }
+
+    }
+    
+        .gallery {
+            position: relative;
+            width: 320px; /* Lebar galeri */
+            height: 200px; /* Tinggi galeri */
+            overflow: hidden;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+
+           
+        }
+
+        .slides {
+            display: flex;
+            justify-content: center; /* Menengahkan gambar */
+            transition: transform 0.5s ease; /* Efek transisi saat menggeser */
+            margin-left: -10px; /* Menggeser ke kiri untuk menyeimbangkan margin */
+            padding-left: -500px; /* Menggeser semua gambar ke kanan */
+        }
+
+        .slide {
+            position: relative; /* Agar deskripsi berada di atas gambar */
+            min-width: 300px; /* Lebar setiap gambar */
+            height: 300px; /* Tinggi setiap gambar */
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px; /* Sudut membulat untuk gambar */
+            overflow: hidden; /* Menyembunyikan bagian gambar yang melampaui sudut */
+            margin-right: 10px; /* Jarak antar gambar */
+            transition: transform 0.3s ease; /* Transisi untuk animasi pop-up */
+            top: 90px;
+            right: -900px;
+        }
+
+        .selected {
+            transform: scale(1.1); /* Ukuran lebih besar dari gambar lainnya */
+            z-index: 1; /* Menempatkan gambar terpilih di atas gambar lainnya */
+        }
+
+
+        .slide:hover {
+            transform: scale(1.2); /* Memperbesar gambar saat di-hover */
+            z-index: 1; /* Menempatkan gambar yang di-hover di atas gambar lainnya */
+        }
+
+        .description {
+            display: none; /* Sembunyikan deskripsi secara default */
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 5px; /* Padding untuk deskripsi */
+            border-radius: 0 0 10px 10px; /* Sudut membulat untuk deskripsi */
+        }
+
+        .slide:hover .description {
+            display: block; /* Tampilkan deskripsi saat di-hover */
+        }
+
+        .button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .button.left {
+            left: 10px;
+        }
+
+        .button.right {
+            right: 10px;
+        }
+        .instagram-logo {
+            width: 35px; /* Sesuaikan ukuran logo */
+            height: auto;
+            position: absolute;
+            top: 65px;
+            right: 70px;
+        }
+        .sticker-atas{
+        width: 13%;
+        position: absolute;
+        margin-left: 4%;
+        margin-top: -6%;
+        
+       }
+
+       .sticker-bawah{
+        width: 8%;
+        position: absolute;
+        margin-right: 10%;
+        left: 1200px;
+        bottom: 50px;
+        z-index: 1;
+        
+       }
+
+       
+    </style>
+    </head>
+
+    <body>
+<h1>
+    Random <span class="highlight"> Gallery</span>
+</h1>
+
+<img src="image/kucink.png" class="sticker-atas">
+<img src="image/zzz.png" class="sticker-bawah">
+
+<div class="gallery">
+    <div class="slides">
+        <div class="slide" style="background-image: url('image/111.jpeg');">
+            <div class="description">first time we met</div>
+        </div>
+        <div class="slide" style="background-image: url('image/3.8.jpeg');">
+            <div class="description">kamu berangkat pkkmb🛵</div>
+        </div>
+        <div class="slide" style="background-image: url('image/3.2.jpeg');">
+            <div class="description">MAMA ARIFF</div>
+        </div>
+        <div class="slide" style="background-image: url('image/ganti 4.jpeg');">
+            <div class="description">day one coolyeah🙂‍↕️</div>
+        </div>
+        <div class="slide" style="background-image: url('image/3.9.jpeg');">
+            <div class="description">kamu pas pura pura ga ngerti🙄</div>
+        </div>
+        <div class="slide" style="background-image: url('image/3.6.jpeg');">
+            <div class="description">hihiy lucuk difotoin sasa</div>
+        </div>
+        <div class="slide" style="background-image: url('image/3.5.jpeg');">
+            <div class="description">fotbar lagie📸</div>
+        </div>
+        <div class="slide" style="background-image: url('image/3.3.jpeg');">
+            <div class="description">Pertama kali aku jemput kamoo</div>
+        </div>
+        <div class="slide" style="background-image: url('image/3.7.jpeg');">
+            <div class="description">ini pas main ke warjooo</div>
+        </div>
+        <div class="slide" style="background-image: url('image/terakhir.jpeg');">
+            <div class="description">🫣</div>
+        </div>
+    </div>
+    <button class="button left" id="prev">❮</button>
+    <button class="button right" id="next">❯</button>
+</div>
+
+<script>
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+    let currentIndex = 0;
+
+    function updateSlidePosition() {
+        const offset = -(currentIndex * 310); // Menggeser posisi berdasarkan lebar gambar + margin
+        slides.style.transform = `translateX(${offset}px)`; // Menggunakan transform untuk animasi smooth
+    }
+
+    document.getElementById('next').addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % 7; // Pergi ke slide berikutnya
+        updateSlidePosition();
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Pergi ke slide sebelumnya
+        updateSlidePosition();
+    });
+
+    updateSlidePosition(); // Inisialisasi posisi slide pertama
+</script>
+
+<a href="pg 2.html" class="tombol-back">Back</a>
+        <style>
+            .tombol-back{
+                display: inline-block;
+                    padding: 1rem 2.8rem;
+                    background-color:rgb(142, 38, 38);
+                    color:floralwhite;
+                    text-align: left;
+                    text-decoration: none;
+                    border-radius: 30px;
+                    font-size: 20px;
+                    align-content: center;
+                    margin-bottom: -1%;
+                    margin-left: -5%;
+                    font-family: Arial Black;
+                    left: 180px;
+                    position: fixed;
+                    bottom: 59px;
+                
+            }
+            .tombol:hover {
+                    background-color: rgb(218, 62, 62);
+                }
+</style>
+            <a href="pg 4.html" class="tombol">Next
+            </a>
+            <style>
+                .tombol{
+                    display: inline-block;
+                        padding: 1rem 2.8rem;
+                        background-color:rgb(142, 38, 38);
+                        color:floralwhite;
+                        text-align: left;
+                        text-decoration: none;
+                        border-radius: 30px;
+                        font-size: 20px;
+                        align-content: center;
+                        margin-bottom: 2%;
+                        margin-left: 30%;
+                        font-family: Arial Black;
+                        right: 100px;
+                        position: fixed;
+                        bottom: 10px;
+                        
+            
+                }
+                .tombol:hover {
+                    background-color: rgb(218, 62, 62);
+                }
+            </style>
+</style>
+<a href="pg 1.html" class="home-button">Home
+</a>
+<style>
+.home-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:rgb(142, 38, 38);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial Black;
+  }
+  
+  .home-button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+</style>
+    </body>
+</html>
